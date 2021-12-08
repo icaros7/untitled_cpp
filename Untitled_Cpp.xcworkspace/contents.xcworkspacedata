@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "&#xae30;&#xb9d0;&#xace0;&#xc0ac;">
+      <FileRef
+         location = "group:Untitled_03/Untitled_03.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Untitled_02/Untitled_02.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Untitled_01/Untitled_01.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
