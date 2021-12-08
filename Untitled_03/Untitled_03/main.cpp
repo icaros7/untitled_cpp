@@ -9,38 +9,36 @@
 #include <vector>
 #include <algorithm>
 
-using namespace std;
-
 class Student {
-    string name;
+    std::string name;
     double mark;
     
 public:
     // 생성지
-    Student(string &name, double &mark) : name(name), mark(mark) {}
+    Student(std::string &name, double &mark) : name(name), mark(mark) {}
     
     // getter
-    string getName() { return name; }
+    std::string getName() { return name; }
     double getMark() { return mark; }
     
     // setter
     
     // 정보 출력 메서드
     void print() {
-        cout << "이름: " << getName() << "\n학점: " << getMark() << endl;
+        std::cout << "이름: " << getName() << "\n학점: " << getMark() << std::endl;
     }
 };
 
 class Class {
-    string name;
-    vector<Student> *students;
+    std::string name;
+    std::vector<Student> *students;
     
 public:
-    Class() : name("이름 없는 학급") { students = new vector<Student>; }
-    Class(string &name, vector<Student> &st) : name(name) { students = &st; }
+    Class() : name("이름 없는 학급") { students = new std::vector<Student>; }
+    Class(std::string &name, std::vector<Student> &st) : name(name) { students = &st; }
     
     // 학생 추가 메서드
-    void addStudent(string &name, double &mark) {
+    void addStudent(std::string &name, double &mark) {
         students->push_back(*new Student(name, mark));
     }
     
@@ -53,10 +51,10 @@ public:
     
     // 학생 정보 출력 메서드
     void print() {
-        cout << name << "반" << endl;
+        std::cout << name << "반" << std::endl;
         for(Student &i : *students) {
             i.print();
-            cout << endl;
+            std::cout << std::endl;
         }
     }
     
@@ -67,19 +65,19 @@ public:
 };
 
 int main(int argc, const char * argv[]) {
-    string className;
-    vector<Student> st;
-    string studentName;
+    std::string className;
+    std::string studentName;
+    std::vector<Student> st;
     double mark;
     
-    cout << "학급 이름: ";
-    cin >> className;
+    std::cout << "학급 이름: ";
+    std::cin >> className;
     
     Class newclass(className, st);
     
     while(1) {
-        cout << "이름 학점: ";
-        cin >> studentName >> mark;
+        std::cout << "이름 학점: ";
+        std::cin >> studentName >> mark;
         if (studentName == "-1" || mark == -1) { break; }
         newclass.addStudent(studentName, mark);
     };
