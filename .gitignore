@@ -265,6 +265,8 @@ DerivedData/
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
+*/xcschememanagement.plist
+*/UserInterfaceState.xcuserstate
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
