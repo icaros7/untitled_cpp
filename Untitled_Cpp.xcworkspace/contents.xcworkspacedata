@@ -5,6 +5,12 @@
       location = "container:"
       name = "&#xae30;&#xb9d0;&#xace0;&#xc0ac;">
       <FileRef
+         location = "group:Untitled_07/Untitled_07.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Untitled_06/Untitled_06.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Untitled_05/Untitled_05.xcodeproj">
       </FileRef>
       <FileRef
